@@ -4,6 +4,8 @@ FROM node:22-alpine AS builder
 
 WORKDIR /app
 
+RUN npm install -g npm@11.6.2
+
 COPY package*.json ./
 RUN npm ci --no-audit --progress=false
 
@@ -27,4 +29,3 @@ USER nextjs
 EXPOSE 3000
 
 CMD ["node", "server.js"]
-

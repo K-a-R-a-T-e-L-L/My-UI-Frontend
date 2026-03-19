@@ -1,0 +1,29 @@
+﻿.root {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--mantine-color-brandPrimary-5) 28%, transparent),
+    0 10px 24px -12px color-mix(in srgb, var(--mantine-color-brandPrimary-6) 55%, transparent);
+  transition: transform 140ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.root:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--mantine-color-brandPrimary-4) 40%, transparent),
+    0 14px 28px -12px color-mix(in srgb, var(--mantine-color-brandPrimary-6) 65%, transparent);
+  filter: saturate(1.06);
+}
+
+.icon {
+  transition: transform 180ms ease;
+}
+
+.light .icon {
+  transform: rotate(-8deg);
+}
+
+.dark .icon {
+  transform: rotate(8deg);
+}

@@ -1,0 +1,56 @@
+{
+  "eyebrow": "UI",
+  "title": "Build interfaces faster with a personal component library",
+  "subtitle": "Ready-made buttons, inputs, background patterns and icons in one place for product work, portfolio cases and rapid prototypes.",
+  "primaryCta": "Browse templates",
+  "secondaryCta": "Contribute a solution",
+  "stats": {
+    "components": "120+ components",
+    "categories": "6 categories",
+    "readiness": "SSR/SSG ready"
+  },
+  "panel": {
+    "title": "What is already inside",
+    "items": {
+      "buttons": "Buttons and states",
+      "buttonsDesc": "Primary, ghost, outline, loading and accent variants.",
+      "inputs": "Input fields",
+      "inputsDesc": "Text inputs, forms, validation and error states.",
+      "backgrounds": "Backgrounds and decor",
+      "backgroundsDesc": "Gradients, grids, glow effects and decorative patterns."
+    }
+  },
+  "problemSolution": {
+    "eyebrow": "Problem and solution",
+    "title": "Templates should speed up work, not get lost across projects",
+    "subtitle": "When UI solutions are scattered across repositories, you spend time rebuilding things you already solved.",
+    "cta": "Open library",
+    "problem": {
+      "title": "Problem",
+      "description": "Duplicated components, lost patterns and slower starts for new tasks."
+    },
+    "solution": {
+      "title": "Solution",
+      "description": "One personal template library with fast access, search and reliable reuse."
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "title": "Save -> Find -> Reuse"
+  },
+  "libraryPreview": {
+    "eyebrow": "Library preview",
+    "title": "Catalog of ready-to-use UI solutions"
+  },
+  "community": {
+    "eyebrow": "Community contribution",
+    "title": "Anyone can submit a solution that helps others ship faster",
+    "subtitle": "Users share ideas and ready templates, and the strongest contributions expand the library.",
+    "cta": "Submit a solution"
+  },
+  "finalCta": {
+    "title": "Start building your own UI library today",
+    "primary": "Browse templates",
+    "secondary": "Submit a solution"
+  }
+}

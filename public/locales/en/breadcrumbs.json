@@ -1,0 +1,12 @@
+{
+  "home": "Home",
+  "segments": {
+    "templates": "Templates",
+    "offers": "Offers",
+    "profile": "Profile",
+    "faq": "FAQ",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "sitemap": "Sitemap"
+  }
+}

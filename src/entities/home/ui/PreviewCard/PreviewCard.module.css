@@ -1,0 +1,60 @@
+[data-mantine-color-scheme="dark"] .card_preview {
+  background: color-mix(
+    in srgb,
+    var(--mantine-color-brandSecondaryB-9) 20%,
+    transparent 80%
+  );
+}
+
+[data-mantine-color-scheme="dark"] .preview_component {
+  width: 100%;
+  aspect-ratio: 1/0.65;
+  background: color-mix(
+    in srgb,
+    var(--mantine-color-brandSecondaryB-9) 20%,
+    transparent 80%
+  );
+}
+
+.card_preview {
+  background: color-mix(
+    in srgb,
+    var(--mantine-color-brandSecondaryB-1) 20%,
+    transparent 80%
+  );
+  border: 1px solid transparent;
+  transition:
+    border 0.1s linear,
+    transform 0.3s ease;
+  cursor: pointer;
+  transform: rotate(-1deg);
+}
+
+.preview_component {
+  width: 100%;
+  aspect-ratio: 1/0.65;
+  background: color-mix(
+    in srgb,
+    var(--mantine-color-brandSecondaryB-2) 20%,
+    transparent 80%
+  );
+  overflow: hidden;
+}
+
+.preview_component > img {
+  transition: all 0.3s ease-in-out;
+}
+
+.card_preview:hover {
+  border: 1px solid
+    color-mix(
+      in srgb,
+      var(--mantine-color-brandSecondaryB-4) 30%,
+      transparent 70%
+    );
+  transform: rotate(0deg);
+}
+
+.card_preview:hover > img {
+  scale: 1.1;
+}

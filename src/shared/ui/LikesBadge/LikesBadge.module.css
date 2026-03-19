@@ -1,0 +1,17 @@
+[data-mantine-color-scheme="dark"] .icon {
+  fill: var(--mantine-color-brandSecondaryA-5);
+  color: var(--mantine-color-brandSecondaryA-7);
+}
+
+[data-mantine-color-scheme="dark"] .text {
+  color: var(--mantine-color-brandSecondaryA-2);
+}
+
+.icon {
+  fill: var(--mantine-color-brandSecondaryA-3);
+  color: var(--mantine-color-brandSecondaryA-5);
+}
+
+.text {
+  color: var(--mantine-color-brandSecondaryA-5);
+}

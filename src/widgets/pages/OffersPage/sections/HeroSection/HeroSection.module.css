@@ -1,0 +1,100 @@
+@keyframes morphing {
+  0% {
+    border-radius: 63% 37% 54% 46% / 55% 62% 38% 45%;
+    transform: skewX(-15deg) skewY(30deg) rotate(0deg);
+    background-position: 100% 100%;
+  }
+  50% {
+    border-radius: 37% 63% 46% 54% / 45% 38% 62% 55%;
+    transform: skewX(-10deg) skewY(25deg) rotate(180deg);
+    background-position: 0% 0%;
+  }
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 62% 38% 45%;
+    transform: skewX(-15deg) skewY(30deg) rotate(360deg);
+    background-position: 100% 100%;
+  }
+}
+
+.hero_badge {
+  width: fit-content;
+}
+
+.steps_card {
+  position: absolute;
+  width: min(340px, 95%);
+  z-index: 2;
+  border-radius: 18px;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--mantine-color-body) 92%, transparent 8%),
+    color-mix(in srgb, var(--mantine-color-body) 82%, transparent 18%)
+  );
+  border-color: color-mix(in srgb, var(--mantine-color-brandSecondaryB-5) 16%, var(--mantine-color-default-border) 84%);
+  box-shadow:
+    0 14px 40px color-mix(in srgb, black 14%, transparent 86%),
+    inset 0 1px 0 color-mix(in srgb, white 36%, transparent 64%);
+}
+
+[data-mantine-color-scheme="dark"] .steps_card {
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--mantine-color-dark-6) 88%, transparent 12%),
+    color-mix(in srgb, var(--mantine-color-dark-8) 84%, transparent 16%)
+  );
+  border-color: color-mix(in srgb, var(--mantine-color-brandSecondaryB-4) 24%, var(--mantine-color-dark-4) 76%);
+}
+
+[data-mantine-color-scheme="dark"] .decor_object {
+  background-image: linear-gradient(
+    to bottom,
+    var(--mantine-color-brandPrimary-6),
+    var(--mantine-color-brandSecondaryA-9),
+    transparent
+  );
+}
+
+.decor_object {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 63% 37% 54% 46% / 55% 62% 38% 45%;
+  transform: skewX(-15deg) skewY(30deg);
+  background-size: 200% 200%;
+  background-position: 100% 100%;
+  background-image: linear-gradient(
+    to bottom,
+    var(--mantine-color-brandPrimary-1),
+    var(--mantine-color-brandSecondaryA-3),
+    transparent
+  );
+  animation: morphing 6s linear infinite;
+  opacity: 0.45;
+}
+
+@media (width < 992px) {
+  .first_col {
+    align-items: center;
+  }
+
+  .first_col > h1,
+  .first_col > p {
+    text-align: center;
+  }
+
+  .box_buttons {
+    justify-content: center;
+  }
+
+  .decor_object {
+    width: 230px;
+    margin-top: 36px;
+  }
+
+  .steps_card {
+    position: absolute;
+    width: 100%;
+    margin-top: 18px;
+  }
+}

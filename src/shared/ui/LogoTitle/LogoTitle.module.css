@@ -1,0 +1,12 @@
+.brand_title {
+  line-height: 1;
+}
+
+.brand_title_text {
+  display: inline-block;
+  background: linear-gradient(155deg, #28dcff, #1f2fd1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}

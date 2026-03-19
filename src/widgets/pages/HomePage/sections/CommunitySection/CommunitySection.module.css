@@ -1,0 +1,23 @@
+.col_slider {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+@media (width < 992px) {
+  .title {
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .box_buttons {
+    justify-content: center;
+  }
+
+  .col_slider {
+    margin-top: 50px;
+  }
+}

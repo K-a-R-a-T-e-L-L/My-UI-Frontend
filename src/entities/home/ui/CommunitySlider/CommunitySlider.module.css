@@ -1,0 +1,73 @@
+.slider {
+  width: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card {
+  width: 100%;
+}
+
+.description{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+}
+
+.template_title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.slider :global(.swiper-pagination) {
+  bottom: 16px !important;
+}
+
+.slider :global(.swiper-pagination-bullet) {
+  width: 25px;
+  height: 8px;
+  background: color-mix(
+    in srgb,
+    var(--mantine-color-brandSecondaryB-4) 25%,
+    transparent 75%
+  );
+  opacity: 1;
+  border-radius: 999;
+}
+
+.slider :global(.swiper-pagination-bullet-active) {
+  width: 25px;
+  border-radius: 999px;
+  background: var(--mantine-color-brandSecondaryB-4);
+}
+
+.slider :global(.swiper-slide) {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.slider :global(.swiper-slide-active) {
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+.quote {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  opacity: 0.2;
+}

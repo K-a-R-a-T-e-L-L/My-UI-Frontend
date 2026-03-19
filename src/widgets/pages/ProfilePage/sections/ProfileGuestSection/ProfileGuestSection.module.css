@@ -1,0 +1,22 @@
+﻿.card {
+  width: 100%;
+  overflow: hidden;
+  background: color-mix(
+    in srgb,
+    var(--mantine-color-body) 92%,
+    var(--mantine-color-brandSecondaryB-4) 8%
+  );
+}
+
+@media (width < 992px) {
+  .card {
+    padding: 20px !important;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card {
+    padding: 14px !important;
+  }
+}

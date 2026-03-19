@@ -1,0 +1,11 @@
+.action:disabled {
+  opacity: 1;
+  background: transparent;
+  cursor: default;
+}
+
+.action {
+  width: auto;
+  height: auto;
+  padding: 4px 8px;
+}

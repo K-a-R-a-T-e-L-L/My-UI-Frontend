@@ -1,0 +1,40 @@
+[data-mantine-color-scheme="dark"] .button {
+  background: linear-gradient(
+    to right,
+    var(--mantine-color-brandSecondaryA-9),
+    var(--mantine-color-brandPrimary-9)
+  );
+}
+
+.icon {
+  color: var(--mantine-color-brandPrimary-light-color);
+  opacity: 0.5;
+}
+
+.button {
+  background: linear-gradient(
+    to right,
+    var(--mantine-color-brandSecondaryA-3),
+    var(--mantine-color-brandPrimary-3)
+  );
+}
+
+@media (width < 992px) {
+  .top_group {
+    flex-wrap: wrap;
+  }
+
+  .top_group__inner {
+    width: 100% !important;
+  }
+}
+
+@media (width < 500px) {
+  .top_group__inner {
+    flex-wrap: wrap;
+  }
+
+  .bottom_group{
+    flex-wrap: wrap;
+  }
+}

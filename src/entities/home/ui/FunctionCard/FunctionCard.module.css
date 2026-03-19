@@ -1,0 +1,29 @@
+[data-mantine-color-scheme="dark"] .card_func:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+  box-shadow: 0 12px 20px -15px var(--mantine-color-brandSecondaryB-3);
+}
+
+[data-mantine-color-scheme="dark"] .card_func {
+  background: color-mix(
+    in srgb,
+    var(--mantine-color-brandPrimary-9) 30%,
+    transparent 70%
+  );
+}
+
+.card_func {
+  transition: all 0.3s ease-in-out;
+  transform: rotate(1deg);
+  background: color-mix(
+    in srgb,
+    var(--mantine-color-brandPrimary-1) 30%,
+    transparent 70%
+  );
+}
+
+.card_func:hover {
+  transform: translateY(-3px) rotate(0);
+  cursor: pointer;
+  box-shadow: 0 12px 20px -15px var(--mantine-color-brandSecondaryB-7);
+}

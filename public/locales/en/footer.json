@@ -1,0 +1,22 @@
+{
+  "brand": "My UI",
+  "description": "A platform to publish and discover UI templates.",
+  "cta": "Open Telegram",
+  "rights": "All rights reserved",
+  "navigation": {
+    "title": "Navigation",
+    "home": "Home",
+    "templates": "Templates",
+    "offers": "Offers",
+    "profile": "Profile"
+  },
+  "resources": {
+    "title": "Resources",
+    "faq": "FAQ",
+    "sitemap": "Sitemap"
+  },
+  "legal": {
+    "privacy": "Privacy policy",
+    "terms": "Terms of use"
+  }
+}

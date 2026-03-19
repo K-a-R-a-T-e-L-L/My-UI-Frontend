@@ -1,0 +1,42 @@
+@keyframes shaking {
+  0%{
+    transform: translateY(0) translateX(0) rotate(calc(var(--rotate-number) * 1deg));
+  }
+  50%{
+    transform: translateY(20px) translateX(calc(var(--rotate-number) * -1px)) rotate(calc(var(--rotate-number) * 1deg));
+  }
+  100%{
+    transform: translateY(0) translateX(0) rotate(calc(var(--rotate-number) * 1deg));
+  }
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  font-size: 250px;
+  font-weight: 900;
+  line-height: 1;
+  color: color-mix(
+    in srgb,
+    var(--mantine-color-brandPrimary-5) 20%,
+    transparent
+  );
+  text-shadow:
+    0 0 10px
+      color-mix(in srgb, var(--mantine-color-brandPrimary-5) 50%, transparent),
+    0 0 20px
+      color-mix(in srgb, var(--mantine-color-brandPrimary-6) 30%, transparent),
+    0 0 40px
+      color-mix(in srgb, var(--mantine-color-brandPrimary-7) 20%, transparent),
+    0 0 80px
+      color-mix(in srgb, var(--mantine-color-brandPrimary-8) 10%, transparent);
+  opacity: 0.1;
+  pointer-events: none;
+  animation: shaking 3s ease-in-out infinite;
+}
+
+@media (width < 992px) {
+  .number{
+    font-size: 200px;
+  }
+}

@@ -1,0 +1,68 @@
+@keyframes morphing {
+  0% {
+    border-radius: 63% 37% 54% 46% / 55% 62% 38% 45%;
+    transform: skewX(-15deg) skewY(30deg) rotate(0deg);
+    background-position: 100% 100%;
+  }
+  50% {
+    border-radius: 37% 63% 46% 54% / 45% 38% 62% 55%;
+    transform: skewX(-10deg) skewY(25deg) rotate(180deg);
+    background-position: 0% 0%;
+  }
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 62% 38% 45%;
+    transform: skewX(-15deg) skewY(30deg) rotate(360deg);
+    background-position: 100% 100%;
+  }
+}
+
+[data-mantine-color-scheme="dark"] .decor_object {
+   background-image: linear-gradient(
+    to bottom,
+    var(--mantine-color-brandPrimary-6),
+    var(--mantine-color-brandSecondaryA-9),
+    transparent
+  );
+}
+
+.decor_object {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 63% 37% 54% 46% / 55% 62% 38% 45%;
+  transform: skewX(-15deg) skewY(30deg);
+  background-size: 200% 200%;
+  background-position: 100% 100%;
+
+  background-image: linear-gradient(
+    to bottom,
+    var(--mantine-color-brandPrimary-1),
+    var(--mantine-color-brandSecondaryA-3),
+    transparent
+  );
+  animation: morphing 6s linear infinite;
+  opacity: 0.4;
+}
+
+@media (width < 992px) {
+  .first_col {
+    align-items: center;
+  }
+
+  .first_col > h1,
+  .first_col > p {
+    text-align: center;
+  }
+
+  .decor_object {
+    width: 230px;
+    margin-top: 60px;
+  }
+
+  .box_buttons {
+    justify-content: center;
+  }
+
+  .number{
+    font-size: 200px;
+  }
+}

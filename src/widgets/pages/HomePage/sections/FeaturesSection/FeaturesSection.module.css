@@ -1,0 +1,104 @@
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes breath {
+  0% {
+    filter: drop-shadow(
+      0 20px 50px
+        color-mix(
+          in srgb,
+          var(--mantine-color-brandSecondaryA-9) 20%,
+          transparent 80%
+        )
+    );
+  }
+  50% {
+    filter: drop-shadow(
+      0 10px 30px
+        color-mix(
+          in srgb,
+          var(--mantine-color-brandSecondaryA-9) 80%,
+          transparent 20%
+        )
+    );
+  }
+  100% {
+    filter: drop-shadow(
+      0 20px 50px
+        color-mix(
+          in srgb,
+          var(--mantine-color-brandSecondaryA-9) 20%,
+          transparent 80%
+        )
+    );
+  }
+}
+
+[data-mantine-color-scheme="dark"] .shell {
+  border: 1px solid
+    color-mix(in srgb, var(--mantine-color-brandPrimary-3) 35%, transparent);
+}
+
+[data-mantine-color-scheme="dark"] .shell::after {
+  background-image:
+    linear-gradient(rgba(190, 115, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(190, 115, 255, 0.1) 1px, transparent 1px);
+}
+
+[data-mantine-color-scheme="dark"] .bg_icon {
+  color: color-mix(
+    in srgb,
+    var(--mantine-color-brandSecondaryA-9) 5%,
+    transparent 95%
+  );
+}
+
+.shell {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 1px solid
+    color-mix(in srgb, var(--mantine-color-brandPrimary-4) 28%, transparent);
+}
+
+.shell::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(137, 0, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(137, 0, 255, 0.05) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.55),
+    transparent 92%
+  );
+}
+
+.preview_panel {
+  backdrop-filter: blur(6px);
+}
+
+.bg_icon {
+  height: 120%;
+  width: 120%;
+  position: absolute;
+  right: 0;
+  color: color-mix(
+    in srgb,
+    var(--mantine-color-brandSecondaryA-2) 5%,
+    transparent 95%
+  );
+  animation:
+    rotation 60s linear infinite,
+    breath 3s ease-in-out infinite;
+}
